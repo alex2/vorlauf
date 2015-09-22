@@ -1,5 +1,5 @@
 import os
-from setuptools import setup, find_packages
+from setuptools import setup
 
 version = '0.0.0'
 
@@ -12,7 +12,7 @@ setup(
     version=version,
     description='Lightweight tool for piping subprocess processes to each other',
     long_description=fread('README.rst') + '\n\n' + fread('CHANGES.rst'),
-    packages=find_packages(),
+    py_modules='vorlauf',
     keywords='vorlauf subprocess pipe',
     author='Alex Holmes',
     author_email='alex@alex-holmes.com',
